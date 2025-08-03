@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Document</title>
+</head>
+
+<body background="calculator background.jpg">
+    <h1 style="text-align:center">Calculator</h1>
+    <div id="calculator">
+        <form>
+            <div id="main">
+                <input type="text" id="input" name="display"><br>
+            </div>
+            <div class="">
+                <input type="button" class="A1" value="%" onclick="display.value+='%'">
+                <input type="button" class="A1" value="." onclick="display.value+='.'">
+                <input type="button" class="A1" value="AC" onclick="display.value= ''">
+                <input type="button" class="A1" value="Del"
+                    onclick="display.value=display.value.toString().slice(0,-1)">
+            </div><br>
+            <div class="A">
+                <input type="button" class="A2" value="7" onclick="display.value+='7'">
+                <input type="button" class="A2" value="8" onclick="display.value+='8'">
+                <input type="button" class="A2" value="9" onclick="display.value+='9'">
+                <input type="button" class="A2" value="/" onclick="display.value+='/'">
+
+            </div><br>
+            <div class="A">
+                <input type="button" class="A3" value="4" onclick="display.value+='4'">
+                <input type="button" class="A3" value="5" onclick="display.value+='5'">
+                <input type="button" class="A3" value="6" onclick="display.value+='6'">
+                <input type="button" class="A3" value="*" onclick="display.value+='*'">
+            </div><br>
+
+            <div class="A">
+
+                <input type="button" class="A4" value="1" onclick="display.value+='1'">
+                <input type="button" class="A4" value="2" onclick="display.value+='2'">
+                <input type="button" class="A4" value="3" onclick="display.value+='3'">
+                <input type="button" class="A4" value="-" onclick="display.value+='-'">
+
+
+            </div><br>
+            <div class="A">
+                <input type="button" class="A5" value="0" onclick="display.value+='0'">
+
+                <input type="button" class="A5" value="00" onclick="display.value+='00'">
+
+                <input type="button" class="A5" value="=" onclick="display.value = eval(display.value)">
+
+                <input type="button" class="A5" value="+" onclick="display.value+='+'">
+
+            </div><br>
+
+
+
+
+    </div>
+    </form>
+
+
+</html>
